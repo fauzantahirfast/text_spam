@@ -7,7 +7,7 @@ const App = () => {
     const sendData = async () => {
         const data = input
         try {
-            const response = await fetch('/api/data', {
+            const response = await fetch('https://testimg-1003428275800.asia-south2.run.app', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
