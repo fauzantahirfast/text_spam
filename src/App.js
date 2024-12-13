@@ -5,14 +5,14 @@ const App = () => {
     const [input, setInput] = useState("")
     const [response, setResponse] = useState("")
     const sendData = async () => {
-        const data = input
+       	const payload = {data: input};
         try {
             const response = await fetch('https://testimg-1003428275800.asia-south2.run.app/api/data', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(data),
+                body: JSON.stringify(payload),
             });
 
             const result = await response.json();
