@@ -10,7 +10,7 @@ const App = () => {
         const payload = { data: input }; // Wrap input into an object
 
         try {
-            const response = await fetch('https://testimg-1003428275800.asia-south2.run.app/api/data', {
+            const response = await fetch('https://testing-1003428275800.asia-south2.run.app/api/data', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
